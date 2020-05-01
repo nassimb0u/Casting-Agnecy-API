@@ -1,7 +1,6 @@
 from flask_sqlalchemy import SQLAlchemy
 from enum import Enum
 from flask_migrate import Migrate
-from datetime import datetime
 
 database_name = "casting_agency"
 database_uri = "postgres://{}:{}@{}/{}".format("postgres","1717531","127.0.0.1:5432",database_name)
@@ -47,7 +46,7 @@ class Movie(db.Model):
         return {
             "id": self.id,
             "title": self.title,
-            "release_date": self.release_date 
+            "release_date": self.release_date.strftime('%d/%m/%Y %H:%M %z')[0:-2]
         }    
 
 #assigning actors and movies

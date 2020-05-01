@@ -124,7 +124,7 @@ def create_app(test_config=None):
       if age is not None and actor.age != age: 
         actor.age = age
         updated = True
-      if gender is not None and actor.gender != gender: 
+      if gender is not None and actor.gender.name != gender: 
         actor.gender = gender
         updated = True
       if updated: actor.update()
