@@ -77,7 +77,7 @@ class Gender(Enum):
 
 class Actor(db.Model):
     __tablename__ = 'actors'
-    id = db.COlumn(db.Integer, primary_key=True)
+    id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(60), nullable=False, unique=True)
     age = db.Column(db.Integer, nullable=False)
     gender = db.Column(db.Enum(Gender), nullable = False)
