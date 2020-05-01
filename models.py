@@ -47,7 +47,7 @@ class Movie(db.Model):
         return {
             "id": self.id,
             "title": self.title,
-            "release_date": formatted_time[0:-5] + 'UTC' + formatted_time[-5, -2]
+            "release_date": formatted_time[0:-5] + 'UTC' + formatted_time[-5:-2]
         }    
 
 #assigning actors and movies
