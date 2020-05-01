@@ -113,17 +113,24 @@ def create_app(test_config=None):
     if actor is None:
       abort(404)
     try:
+      updated = False
       body = request.get_json()
       name = body.get('name', None)
       age = body.get('age', None)
       gender = body.get('gender', None)
-      if name is not None: actor.name = name
-      if age is not None: actor.age = age
-      if gender is not None actor.gender = gender
-      actor.update
+      if name is not None and actor.name != name:
+         actor.name = name
+         updated = True
+      if age is not None and actor.age != age: 
+        actor.age = age
+        updated = True
+      if gender is not None and actor.gender != gender: 
+        actor.gender = gender
+        updated = True
+      if updated: actor.update()
       return jsonify({
         'success': True,
-        'updated': actor.format()
+        'updated': actor.format() if updated else 'unchanged'
       })
     except:
       abort(400)
@@ -134,18 +141,23 @@ def create_app(test_config=None):
     if movie is None:
       abort(404)
     try:
+      updated = False
       body = request.get_json()
       title = body.get('title', None)
       release_date = body.get('release_date', None)
       if release_date is not None:
         release_date += '00'
         dt_realease_date = datetime.strptime(release_date, '%d/%m/%Y %H:%M %z')
-        movie.release_date = dt_realease_date
-      if title is not None: movie.title = title
-      movie.update
+        if dt_realease_date != movie.release_date:
+          movie.release_date = dt_realease_date
+          updated = True
+      if title is not None and title != movie.title: 
+        movie.title = title
+        updated = True
+      if updated: movie.update()
       return jsonify({
         'success': True,
-        'updated': movie.format()
+        'updated': movie.format() if updated else 'unchanged'
       })
     except:
       abort(400)
