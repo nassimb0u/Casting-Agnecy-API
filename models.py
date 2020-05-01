@@ -43,10 +43,11 @@ class Movie(db.Model):
         db.session.commit()
 
     def format(self):
+        formatted_time = self.release_date.strftime('%d/%m/%Y %H:%M %z')
         return {
             "id": self.id,
             "title": self.title,
-            "release_date": self.release_date.strftime('%d/%m/%Y %H:%M %z')[0:-2]
+            "release_date": formatted_time[0:-5] + 'UTC' + formatted_time[-5, -2]
         }    
 
 #assigning actors and movies

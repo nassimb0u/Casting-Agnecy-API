@@ -147,7 +147,7 @@ def create_app(test_config=None):
       release_date = body.get('release_date', None)
       if release_date is not None:
         release_date += '00'
-        dt_realease_date = datetime.strptime(release_date, '%d/%m/%Y %H:%M %z')
+        dt_realease_date = datetime.strptime(release_date, '%d/%m/%Y %H:%M UTC%z')
         if dt_realease_date != movie.release_date:
           movie.release_date = dt_realease_date
           updated = True
