@@ -25,7 +25,7 @@ class Movie(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(120), unique=True, nullable=False)
     release_date = db.Column(db.DateTime, nullable=False)
-    actors = db.relationship('actors_movies', backref='movies', lazy=True, cascade='delete')
+    actors = db.relationship('Assigning_actors_movies', backref='movies', lazy=True, cascade='delete')
 
     def __init__(self, title, release_date):
         self.title = title
@@ -49,7 +49,7 @@ class Movie(db.Model):
         }    
 
 #assigning actors and movies
-class assigning_actors_movies(db.Model):
+class Assigning_actors_movies(db.Model):
     __tablename__ = 'actors_movies'
     id = db.Column(db.Integer, primary_key=True)
     actor = db.Column(db.String(60), db.ForeignKey('actors.name'), nullable=False)
@@ -81,7 +81,7 @@ class Actor(db.Model):
     name = db.Column(db.String(60), nullable=False, unique=True)
     age = db.Column(db.Integer, nullable=False)
     gender = db.Column(db.Enum(Gender), nullable = False)
-    movies = db.relationship('actors_movies', backref='actors', lazy=True, cascade='delete')
+    movies = db.relationship('Assigning_actors_movies', backref='actors', lazy=True, cascade='delete')
 
     def __init__(self, name, age, gender):
         self.name = name
