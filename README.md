@@ -113,9 +113,9 @@ Authorization: Bearer YOUR_JWT
 
 To get or update JWTs for a specific role, log into my AUTH0 hosted page with the role corresponding user credentials:
 
-* [here](https://nassimb.auth0.com/authorize?audience=casting_agency&response_type=token&client_id=ceUmvORq0yEmLrhtaU9pCFuUXTKOo7fy&redirect_uri=http://localhost:8080/) if you are testing the API locally.
+* [here](https://nassimb.auth0.com/v2/logout?client_id=ceUmvORq0yEmLrhtaU9pCFuUXTKOo7fy&returnTo=https%3A%2F%2Fnassimb.auth0.com%2Fauthorize%3Faudience%3Dcasting_agency%26response_type%3Dtoken%26client_id%3DceUmvORq0yEmLrhtaU9pCFuUXTKOo7fy%26redirect_uri%3Dhttp%3A%2F%2Flocalhost%3A8080%2F) if you are running the API locally.
 
-* [here](https://nassimb.auth0.com/authorize?audience=casting_agency&response_type=token&client_id=ceUmvORq0yEmLrhtaU9pCFuUXTKOo7fy&redirect_uri=http://localhost:8080/) if you are testing the live API on HEROKU.
+* [here](https://nassimb.auth0.com/v2/logout?client_id=ceUmvORq0yEmLrhtaU9pCFuUXTKOo7fy&returnTo=https%3A%2F%2Fnassimb.auth0.com%2Fauthorize%3Faudience%3Dcasting_agency%26response_type%3Dtoken%26client_id%3DceUmvORq0yEmLrhtaU9pCFuUXTKOo7fy%26redirect_uri%3Dhttps%3A%2F%2Fcasting-agency-api-nb.herokuapp.com%2F) if you are testing the live API on HEROKU.
 
 #### Executive Producer
 ```
@@ -134,11 +134,6 @@ zWjRZXmrR439Dz2
 castingassistant@castingagency.com
 zWjRZXmrR439Dz2
 ```
-To switch between roles, logout:
-
-* [here](https://nassimb.auth0.com/v2/logout?client_id=ceUmvORq0yEmLrhtaU9pCFuUXTKOo7fy&returnTo=https%3A%2F%2Fnassimb.auth0.com%2Fauthorize%3Faudience%3Dcasting_agency%26response_type%3Dtoken%26client_id%3DceUmvORq0yEmLrhtaU9pCFuUXTKOo7fy%26redirect_uri%3Dhttp%3A%2F%2Flocalhost%3A8080%2F) if you are running the API locally.
-
-* [here](https://nassimb.auth0.com/v2/logout?client_id=ceUmvORq0yEmLrhtaU9pCFuUXTKOo7fy&returnTo=https%3A%2F%2Fnassimb.auth0.com%2Fauthorize%3Faudience%3Dcasting_agency%26response_type%3Dtoken%26client_id%3DceUmvORq0yEmLrhtaU9pCFuUXTKOo7fy%26redirect_uri%3Dhttp%3A%2F%2Flocalhost%3A8080%2F) if you are testing the live API on HEROKU.
 
 ### Running tests and the server
 
@@ -158,13 +153,24 @@ python app.py
 
 ## Demo Page
 
-The API is hosted on [Heroku](https://dashboard.heroku.com/) and publically accessible with the following [link]().
+The API is hosted on [Heroku](https://dashboard.heroku.com/) and publically accessible with the following [link](https://casting-agency-api-nb.herokuapp.com/).
 
 To test the hosted API or your local one with [Postman](https://www.postman.com/downloads/):
 
 * Import the postman collection `./Capstone_project.postman_collection.json`
-* Run the collection.
-* Replace the localURL with the Heroku URL.
+* Create an environement with the variable:
+
+```bash
+base_url=https://casting-agency-api-nb.herokuapp.com/
+```
+
+or if you would like to test your local API!
+
+```bash
+base_url=http://127.0.0.1:8080/
+```
+
+* Run the collection whitin the created environement.
 
 ## Endpoints Documentation
 
