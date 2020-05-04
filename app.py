@@ -320,7 +320,7 @@ confim their ids before assign to movie'
 
   return app
 
-APP = create_app()
+app = create_app()
 
 if __name__ == '__main__':
-    APP.run()
+    app.run()
