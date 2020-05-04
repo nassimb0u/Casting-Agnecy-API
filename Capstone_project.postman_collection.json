@@ -40,17 +40,9 @@
 							}
 						],
 						"url": {
-							"raw": "http://127.0.0.1:8080/actors",
-							"protocol": "http",
+							"raw": "{{base_url}}actors",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
-							"port": "8080",
-							"path": [
-								"actors"
+								"{{base_url}}actors"
 							]
 						}
 					},
@@ -81,17 +73,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8080/movies",
-							"protocol": "http",
+							"raw": "{{base_url}}movies",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
-							"port": "8080",
-							"path": [
-								"movies"
+								"{{base_url}}movies"
 							]
 						}
 					},
@@ -126,17 +110,9 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8080/actors",
-							"protocol": "http",
+							"raw": "{{base_url}}actors",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
-							"port": "8080",
-							"path": [
-								"actors"
+								"{{base_url}}actors"
 							]
 						}
 					},
@@ -171,17 +147,9 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8080/movies",
-							"protocol": "http",
+							"raw": "{{base_url}}movies",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
-							"port": "8080",
-							"path": [
-								"movies"
+								"{{base_url}}movies"
 							]
 						}
 					},
@@ -223,17 +191,11 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8080/movies/6",
-							"protocol": "http",
+							"raw": "{{base_url}}movies/6",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{base_url}}movies"
 							],
-							"port": "8080",
 							"path": [
-								"movies",
 								"6"
 							]
 						}
@@ -276,17 +238,11 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8080/actors/45",
-							"protocol": "http",
+							"raw": "{{base_url}}actors/45",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{base_url}}actors"
 							],
-							"port": "8080",
 							"path": [
-								"actors",
 								"45"
 							]
 						}
@@ -313,17 +269,11 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8080/actors/47",
-							"protocol": "http",
+							"raw": "{{base_url}}actors/47",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{base_url}}actors"
 							],
-							"port": "8080",
 							"path": [
-								"actors",
 								"47"
 							]
 						}
@@ -350,17 +300,11 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8080/movies/5",
-							"protocol": "http",
+							"raw": "{{base_url}}movies/5",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{base_url}}movies"
 							],
-							"port": "8080",
 							"path": [
-								"movies",
 								"5"
 							]
 						}
@@ -373,7 +317,7 @@
 				"bearer": [
 					{
 						"key": "token",
-						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1rTkNSamRHT1RNNU56STNRVVE1UVRBeE9EZzFSakpCUVRNek9FTkNPVVZFT0RFNU4wUXlOdyJ9.eyJpc3MiOiJodHRwczovL25hc3NpbWIuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDVlYWQ0ODU2NmI2OWJjMGMxMmVkMDBhMCIsImF1ZCI6ImNhc3RpbmdfYWdlbmN5IiwiaWF0IjoxNTg4NTY3ODYxLCJleHAiOjE1ODg2MDM4NjEsImF6cCI6ImNlVW12T1JxMHlFbUxyaHRhVTlwQ0Z1VVhUS09vN2Z5Iiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6YWN0b3JzIiwiZGVsZXRlOm1vdmllcyIsImdldDphY3RvcnMiLCJnZXQ6bW92aWVzIiwicGF0Y2g6YWN0b3JzIiwicGF0Y2g6bW92aWVzIiwicG9zdDphY3RvcnMiLCJwb3N0Om1vdmllcyJdfQ.n5ClWO7Izup29VtLVkvXFAEGxGNfaPWephL2xn2gtRuyUpUDTJ3Rr_5-Tadvbf5e97Sj0_tawTYW3DsXjWD0ie6l7ekLnxR5Ae-VGrJOK5eB8bsBghkKkv_9tU01bttBd7LJHhyE-raMHofNcY-WXIf01Vz5-94lorH7_QiTnSUJnHcwEOBclu1J0Za8fGtzXptlEPeeuk050vTVQ3qdW705OkqCISdZRnDLjfE7ydyAQS2Zgyu2eq-GDN81EVtada-WpkRzu6ggzFHOgnXuG3n3HAZXOCddQGs4E1rezLsuyrEiDzTXV4nO7MBT7SKkOT0GIeHHoQ3mFw8bU6MzSA",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1rTkNSamRHT1RNNU56STNRVVE1UVRBeE9EZzFSakpCUVRNek9FTkNPVVZFT0RFNU4wUXlOdyJ9.eyJpc3MiOiJodHRwczovL25hc3NpbWIuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDVlYWQ0ODU2NmI2OWJjMGMxMmVkMDBhMCIsImF1ZCI6ImNhc3RpbmdfYWdlbmN5IiwiaWF0IjoxNTg4NjEyNDI2LCJleHAiOjE1ODg2NDg0MjYsImF6cCI6ImNlVW12T1JxMHlFbUxyaHRhVTlwQ0Z1VVhUS09vN2Z5Iiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6YWN0b3JzIiwiZGVsZXRlOm1vdmllcyIsImdldDphY3RvcnMiLCJnZXQ6bW92aWVzIiwicGF0Y2g6YWN0b3JzIiwicGF0Y2g6bW92aWVzIiwicG9zdDphY3RvcnMiLCJwb3N0Om1vdmllcyJdfQ.QzteFzSyraKPGcugx_-0LLjOS2dEE7Yfqu6NVJCQpJAWQACpgA-O_3InROagdE9W6Bin1ytU8JjiTWnJjI93mKLZXsxoBHjHitZYI3jyWoXZZK12hGwxMrg6mb9hS9xkR66Ny1lt93gLsI-GqZ6m_cRQmHWMRTQO19jps4ymOv69SknJGpX13V6JsqK-0jzEZsMzYDoo7EyLtDnnG-tgYSMz1YDurWUjXKLOFkQAZpeQOlJJMpedPuHj2a8cxGSMptv5pDmfOC31iW1yeD-gXr1lQicNFlQ3K2PlseMyVJJXLiCrnYCUydC4uu9W7Y8I7Z4YHt9gQKtzB3gv_vTAuQ",
 						"type": "string"
 					}
 				]
@@ -437,17 +381,9 @@
 							}
 						],
 						"url": {
-							"raw": "http://127.0.0.1:8080/actors",
-							"protocol": "http",
+							"raw": "{{base_url}}actors",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
-							"port": "8080",
-							"path": [
-								"actors"
+								"{{base_url}}actors"
 							]
 						}
 					},
@@ -478,17 +414,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8080/movies",
-							"protocol": "http",
+							"raw": "{{base_url}}movies",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
-							"port": "8080",
-							"path": [
-								"movies"
+								"{{base_url}}movies"
 							]
 						}
 					},
@@ -515,7 +443,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"name\": \"actor 1\",\n\t\"age\": 33,\n\t\"gender\": \"male\",\n\t\"movies\": [8, 7]\n}",
+							"raw": "{\n\t\"name\": \"actor 2\",\n\t\"age\": 33,\n\t\"gender\": \"male\",\n\t\"movies\": [8, 7]\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -523,17 +451,9 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8080/actors",
-							"protocol": "http",
+							"raw": "{{base_url}}actors",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
-							"port": "8080",
-							"path": [
-								"actors"
+								"{{base_url}}actors"
 							]
 						}
 					},
@@ -568,17 +488,9 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8080/movies",
-							"protocol": "http",
+							"raw": "{{base_url}}movies",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
-							"port": "8080",
-							"path": [
-								"movies"
+								"{{base_url}}movies"
 							]
 						}
 					},
@@ -620,17 +532,11 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8080/movies/6",
-							"protocol": "http",
+							"raw": "{{base_url}}movies/6",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{base_url}}movies"
 							],
-							"port": "8080",
 							"path": [
-								"movies",
 								"6"
 							]
 						}
@@ -673,17 +579,11 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8080/actors/45",
-							"protocol": "http",
+							"raw": "{{base_url}}actors/45",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{base_url}}actors"
 							],
-							"port": "8080",
 							"path": [
-								"actors",
 								"45"
 							]
 						}
@@ -747,17 +647,11 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8080/movies/5",
-							"protocol": "http",
+							"raw": "{{base_url}}movies/5",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{base_url}}movies"
 							],
-							"port": "8080",
 							"path": [
-								"movies",
 								"5"
 							]
 						}
@@ -834,17 +728,9 @@
 							}
 						],
 						"url": {
-							"raw": "http://127.0.0.1:8080/actors",
-							"protocol": "http",
+							"raw": "{{base_url}}actors",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
-							"port": "8080",
-							"path": [
-								"actors"
+								"{{base_url}}actors"
 							]
 						}
 					},
@@ -875,17 +761,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8080/movies",
-							"protocol": "http",
+							"raw": "{{base_url}}movies",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
-							"port": "8080",
-							"path": [
-								"movies"
+								"{{base_url}}movies"
 							]
 						}
 					},
@@ -920,17 +798,9 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8080/actors",
-							"protocol": "http",
+							"raw": "{{base_url}}actors",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
-							"port": "8080",
-							"path": [
-								"actors"
+								"{{base_url}}actors"
 							]
 						}
 					},
@@ -965,17 +835,9 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8080/movies",
-							"protocol": "http",
+							"raw": "{{base_url}}movies",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
-							"port": "8080",
-							"path": [
-								"movies"
+								"{{base_url}}movies"
 							]
 						}
 					},
@@ -1010,17 +872,11 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8080/movies/6",
-							"protocol": "http",
+							"raw": "{{base_url}}movies/6",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{base_url}}movies"
 							],
-							"port": "8080",
 							"path": [
-								"movies",
 								"6"
 							]
 						}
@@ -1056,17 +912,11 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8080/actors/45",
-							"protocol": "http",
+							"raw": "{{base_url}}actors/45",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{base_url}}actors"
 							],
-							"port": "8080",
 							"path": [
-								"actors",
 								"45"
 							]
 						}
@@ -1093,17 +943,11 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8080/actors/47",
-							"protocol": "http",
+							"raw": "{{base_url}}actors/47",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{base_url}}actors"
 							],
-							"port": "8080",
 							"path": [
-								"actors",
 								"47"
 							]
 						}
@@ -1130,17 +974,11 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8080/movies/5",
-							"protocol": "http",
+							"raw": "{{base_url}}movies/5",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{base_url}}movies"
 							],
-							"port": "8080",
 							"path": [
-								"movies",
 								"5"
 							]
 						}
@@ -1212,17 +1050,9 @@
 							}
 						],
 						"url": {
-							"raw": "http://127.0.0.1:8080/actors",
-							"protocol": "http",
+							"raw": "{{base_url}}actors",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
-							"port": "8080",
-							"path": [
-								"actors"
+								"{{base_url}}actors"
 							]
 						}
 					},
@@ -1248,17 +1078,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8080/movies",
-							"protocol": "http",
+							"raw": "{{base_url}}movies",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
-							"port": "8080",
-							"path": [
-								"movies"
+								"{{base_url}}movies"
 							]
 						}
 					},
@@ -1293,17 +1115,9 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8080/actors",
-							"protocol": "http",
+							"raw": "{{base_url}}actors",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
-							"port": "8080",
-							"path": [
-								"actors"
+								"{{base_url}}actors"
 							]
 						}
 					},
@@ -1338,17 +1152,9 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8080/movies",
-							"protocol": "http",
+							"raw": "{{base_url}}movies",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
-							"port": "8080",
-							"path": [
-								"movies"
+								"{{base_url}}movies"
 							]
 						}
 					},
@@ -1383,17 +1189,11 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8080/movies/6",
-							"protocol": "http",
+							"raw": "{{base_url}}movies/6",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{base_url}}movies"
 							],
-							"port": "8080",
 							"path": [
-								"movies",
 								"6"
 							]
 						}
@@ -1429,17 +1229,11 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8080/actors/45",
-							"protocol": "http",
+							"raw": "{{base_url}}actors/45",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{base_url}}actors"
 							],
-							"port": "8080",
 							"path": [
-								"actors",
 								"45"
 							]
 						}
@@ -1466,17 +1260,11 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8080/actors/47",
-							"protocol": "http",
+							"raw": "{{base_url}}actors/47",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{base_url}}actors"
 							],
-							"port": "8080",
 							"path": [
-								"actors",
 								"47"
 							]
 						}
@@ -1503,17 +1291,11 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8080/movies/5",
-							"protocol": "http",
+							"raw": "{{base_url}}movies/5",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{base_url}}movies"
 							],
-							"port": "8080",
 							"path": [
-								"movies",
 								"5"
 							]
 						}
