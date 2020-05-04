@@ -30,8 +30,8 @@ def setup_db(app, database_uri=database_uri):
     app.config['SQLALCHEMY_DATABASE_URI'] = database_uri
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     db.app = app
-    migrate = Migrate(app, db)
     db.init_app(app)
+    migrate = Migrate(app, db)
 
 # Movie
 class Movie(db.Model):
