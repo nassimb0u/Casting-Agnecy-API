@@ -111,7 +111,11 @@ Authorization: Bearer YOUR_JWT
 
 ### How to update JWTs
 
-To get or update JWTs for a specific role, login in my [AUTH0 hosted page](https://nassimb.auth0.com/authorize?audience=casting_agency&response_type=token&client_id=ceUmvORq0yEmLrhtaU9pCFuUXTKOo7fy&redirect_uri=https://localhost:8080/) with the role corresponding user credentials:
+To get or update JWTs for a specific role, log into my AUTH0 hosted page with the role corresponding user credentials:
+
+* [here](https://nassimb.auth0.com/authorize?audience=casting_agency&response_type=token&client_id=ceUmvORq0yEmLrhtaU9pCFuUXTKOo7fy&redirect_uri=http://localhost:8080/) if you are testing the API locally.
+
+* [here](https://nassimb.auth0.com/authorize?audience=casting_agency&response_type=token&client_id=ceUmvORq0yEmLrhtaU9pCFuUXTKOo7fy&redirect_uri=http://localhost:8080/) if you are testing the live API on HEROKU.
 
 #### Executive Producer
 ```
@@ -130,6 +134,12 @@ zWjRZXmrR439Dz2
 castingassistant@castingagency.com
 zWjRZXmrR439Dz2
 ```
+To switch between roles, logout:
+
+* [here](https://nassimb.auth0.com/v2/logout?client_id=ceUmvORq0yEmLrhtaU9pCFuUXTKOo7fy&returnTo=https%3A%2F%2Fnassimb.auth0.com%2Fauthorize%3Faudience%3Dcasting_agency%26response_type%3Dtoken%26client_id%3DceUmvORq0yEmLrhtaU9pCFuUXTKOo7fy%26redirect_uri%3Dhttp%3A%2F%2Flocalhost%3A8080%2F) if you are running the API locally.
+
+* [here](https://nassimb.auth0.com/v2/logout?client_id=ceUmvORq0yEmLrhtaU9pCFuUXTKOo7fy&returnTo=https%3A%2F%2Fnassimb.auth0.com%2Fauthorize%3Faudience%3Dcasting_agency%26response_type%3Dtoken%26client_id%3DceUmvORq0yEmLrhtaU9pCFuUXTKOo7fy%26redirect_uri%3Dhttp%3A%2F%2Flocalhost%3A8080%2F) if you are testing the live API on HEROKU.
+
 ### Running tests and the server
 
 To run the tests, execute from the project directory:
@@ -152,7 +162,7 @@ The API is hosted on [Heroku](https://dashboard.heroku.com/) and publically acce
 
 To test the hosted API or your local one with [Postman](https://www.postman.com/downloads/):
 
-* Import the postman collection `./udacity-fsnd-capstone.postman_collection.json`
+* Import the postman collection `./Capstone_project.postman_collection.json`
 * Run the collection.
 * Replace the localURL with the Heroku URL.
 

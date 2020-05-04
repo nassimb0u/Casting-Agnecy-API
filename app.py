@@ -1,5 +1,5 @@
 import os
-from flask import Flask, request, abort, jsonify
+from flask import Flask, request, abort, jsonify, render_template
 from flask_cors import CORS
 from models import setup_db, Movie, Actor, ActionError, Assigning_actors_movies, Gender
 from datetime import datetime
@@ -29,7 +29,7 @@ def create_app(test_config=None):
 
   @app.route('/')
   def test():
-    return 'healty'
+    return render_template('index.html')
   
   @app.route('/actors')
   @requires_auth('get:actors')
