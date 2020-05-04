@@ -3,7 +3,6 @@ venv/
 __pycache__/
 test.dbs
 env/
-migrations/
 
 # OS generated files #
 ######################
