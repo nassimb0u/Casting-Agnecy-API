@@ -222,6 +222,7 @@ confim their ids before assign to actor'
       body = request.get_json()
     except:
       abort(400)
+    updated = False
     title = body.get('title')
     release_date = body.get('release_date')
     actors = body.get('actors')
