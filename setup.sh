@@ -1,7 +1,8 @@
 #!/bin/sh
 
 export DATABASE_URL=postgresql://postgres:1717531@127.0.0.1:5432/casting_agency
-export AUTH0DOMAIN=nassimb.auth0.com
+export AUTH0_DOMAIN=nassimb.auth0.com
+export AUTH0_CLIENT_ID=ceUmvORq0yEmLrhtaU9pCFuUXTKOo7fy
 export API_AUDIENCE=casting_agency
 export ACTOR_NAME_MAX_LENGTH=60
 export MOVIE_TITLE_LENGTH=120
