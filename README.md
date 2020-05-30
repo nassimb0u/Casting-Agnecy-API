@@ -95,7 +95,7 @@ Before running the server you need to personalize some environnement variables i
 DATABASE_URL=DIALECT+DRIVER://USERNAME:PASSWORD@HOST:PORT/DATABASE_NAME
 ```
 
-For example `postgresql://postgres:1717531@127.0.0.1:5432/casting_agency` for database casting_agency within postgres server running locally with default port 5432, user: postgres and password: 1717531
+For example `postgresql://postgres:1717531@127.0.0.1:5432/casting_agency` for database `casting_agency` within postgres server running locally with default port 5432, user: postgres and password: 1717531
 
 ```
 EXECUTIVE_PRODUCER_JWT, CASTING_DIRECTOR_JWT, CASTING_ASSISTANT_JWT
